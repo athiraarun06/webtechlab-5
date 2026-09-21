@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0d0d0d;
+    color:#ffffff;
+}
+
+/* ================= HEADER ================= */
+
+.top-bar{
+    background:#6D4C41;
+    padding:18px 40px;
+    border-bottom:2px solid #D4A373;
+}
+
+.logo-section{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo{
+    width:55px;
+    height:55px;
+}
+
+.logo-section h1{
+    color:#FFD369;
+    font-size:28px;
+}
+
+.logo-section p{
+    color:#F5E6CA;
+    font-size:13px;
+}
+
+nav{
+    background:#111;
+    border-bottom:1px solid #D4A373;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+nav ul li a{
+    display:block;
+    padding:15px 28px;
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+    font-size:15px;
+}
+
+nav ul li a:hover{
+    color:#FFD369;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+    url("images/hero-bg.jpg") center/cover no-repeat;
+    height:85vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h2{
+    font-size:58px;
+    color:#FFD369;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    max-width:700px;
+    margin:auto;
+    color:#F5E6CA;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.hero-content button{
+    margin:25px 10px 0;
+    padding:14px 28px;
+    border:none;
+    border-radius:30px;
+    background:#D4A373;
+    color:#111;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.hero-content button:hover{
+    transform:translateY(-3px);
+    background:#FFD369;
+}
+
+/* ================= COMMON SECTION ================= */
+
+section{
+    max-width:1200px;
+    margin:45px auto;
+    padding:0 20px;
+}
+
+section h2{
+    color:#FFD369;
+    margin-bottom:25px;
+    font-size:34px;
+    border-left:5px solid #D4A373;
+    padding-left:15px;
+}
+
+/* ================= ABOUT ================= */
+
+.about{
+    background:#181818;
+    padding:35px;
+    border-radius:18px;
+    border:1px solid #6D4C41;
+}
+
+.about-grid{
+    display:grid;
+    grid-template-columns:2fr repeat(3,1fr);
+    gap:20px;
+}
+
+.about-text{
+    color:#dddddd;
+    line-height:1.8;
+}
+
+.stats{
+    background:#111;
+    border:1px solid #D4A373;
+    text-align:center;
+    padding:20px;
+    border-radius:12px;
+    font-size:30px;
+    color:#FFD369;
+    font-weight:700;
+}
+
+.stats span{
+    display:block;
+    margin-top:10px;
+    color:#ddd;
+    font-size:14px;
+}
+
+/* ================= SERVICES ================= */
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#181818;
+    border:1px solid #6D4C41;
+    padding:25px;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    border-color:#FFD369;
+}
+
+.card h3{
+    color:#FFD369;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#d6d6d6;
+    line-height:1.6;
+}
+
+/* ================= GALLERY ================= */
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:20px;
+}
+
+.gallery-card{
+    background:#181818;
+    border-radius:15px;
+    overflow:hidden;
+    border:1px solid #6D4C41;
+    transition:.3s;
+}
+
+.gallery-card:hover{
+    transform:scale(1.03);
+}
+
+.gallery-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.gallery-card h4{
+    text-align:center;
+    padding:15px;
+    color:#FFD369;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+    background:#181818;
+    padding:30px;
+    border-radius:18px;
+    border:1px solid #6D4C41;
+}
+
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.feature-card{
+    background:#111;
+    padding:20px;
+    border-radius:15px;
+    border:1px solid #6D4C41;
+}
+
+.feature-card h3{
+    color:#FFD369;
+    margin-bottom:10px;
+}
+
+.feature-card input,
+.feature-card select{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border-radius:8px;
+    border:none;
+    background:#222;
+    color:white;
+}
+
+.feature-card button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#D4A373;
+    color:#111;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.feature-card button:hover{
+    background:#FFD369;
+}
+
+.output{
+    margin-top:15px;
+    background:#222;
+    padding:12px;
+    border-radius:8px;
+    min-height:55px;
+    color:#F5E6CA;
+    font-size:14px;
+}
+
+.challenge-box{
+    margin-top:15px;
+    border:2px dashed #FFD369;
+    padding:20px;
+    text-align:center;
+    font-size:32px;
+    border-radius:12px;
+    color:#FFD369;
+}
+
+/* ================= CONTACT ================= */
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.contact-card{
+    background:#181818;
+    border:1px solid #6D4C41;
+    padding:20px;
+    border-radius:15px;
+}
+
+.contact-card h4{
+    color:#FFD369;
+    margin-bottom:10px;
+}
+
+.contact-card p{
+    color:#ddd;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111;
+    border-top:2px solid #D4A373;
+    text-align:center;
+    padding:30px 20px;
+}
+
+footer h3{
+    color:#FFD369;
+    margin-bottom:10px;
+    font-size:24px;
+}
+
+footer p{
+    color:#cccccc;
+    margin:5px 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+    }
+
+    .hero-content h2{
+        font-size:38px;
+    }
+
+    .hero{
+        height:auto;
+        padding:100px 20px;
+    }
+}
